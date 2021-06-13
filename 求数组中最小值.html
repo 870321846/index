@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script>
+        // var arr = [1, 0, -9, 55, 32, 12, -60];
+
+        // function getMin(arr) {
+        //     var min = arr[0];
+        //     for (var i = 1; i < arr.length; i++) {
+        //         if (min > arr[i]) {
+        //             min = arr[i];
+        //         }
+        //     }
+        //     return min;
+        // }
+        // console.log(getMin(arr));
+
+        // function getRandom(arr) {
+        //     var brr = [];
+        //     var num = arr.length;
+        //     for (var i = 0; i < num; i++) {
+        //         var temp = parseInt(Math.random() * (num - i));
+        //         brr.push(arr[temp]);
+        //         arr.splice(temp, 1);
+        //     }
+        //     return brr
+        // }
+        // arr = ['成员1', '成员2', '成员3', '成员4', '成员5', '成员6', '成员7', '成员8'];
+        // alert(getRandom(arr));
+        // function aA() {
+        //     var a = [];
+        //     for (var i = 1; i <= 4; i++) {
+        //         switch (i) {
+        //             case 1:
+        //                 a[i] = 1;
+        //                 break;
+        //             case 2:
+        //                 a[i] = 2;
+        //                 break;
+        //             case 3:
+        //                 a[i] = 3;
+        //                 break;
+        //             case 4:
+        //                 a[i] = 4;
+        //                 break;
+        //         }
+        //         if (i === 2) {
+        //             break;
+        //         }
+        //     }
+        //     return a;
+        // }
+        // console.log(aA());   
+
+        function aA(a) {
+            a = prompt('请输入查询的年份');
+            // while (a == 0) {
+            //     alert('输入有误,请重新输入');
+            //     a = prompt('请输入查询的年份');
+            // }
+            return a % 4 === 0 && a % 100 !== 0 || a % 400 === 0
+        }
+
+        function backDay(year) {
+            return aA(year) ? '今年2月有29天' : '今年2月有28天';
+        }
+        console.log(backDay())
+ 
+
+
+        //arguments 是一个伪数组,没有无法使用索引值,现在不确定是不是正确的;
+        // function reverse() {
+        //     var arr = [];
+        //     console.log(arguments[2])
+        //     for (var i = 0; i < arguments.length; i++) {
+        //         arr.unshift(arguments[i])
+        //     }
+        //     return arr;
+        // }
+        // var a=[1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+        // var b=reverse(a);
+        // console.log(b[2])
+
+
+
+
+        // function aA(a,b,c){
+        //     console.log(arguments[3],arguments[4]);
+        //     var arguments; 
+        // }
+        // aA(1,2,3,4,5)
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>
